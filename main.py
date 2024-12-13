@@ -195,6 +195,7 @@ def getDistanceBetween2Cities(start, end):
     else:
         return 'ERROR::make sure start is less than or equal to end'
 
+#Gets the minimum distance between any 2 points
 def getMinimumDistanceBetween2Cities(start, end):
     #print("Start", start)
     #print("End", end)
@@ -215,7 +216,7 @@ arr = [1, 2, 3]
 pkS1 = 0
 pkE1 = city_arr2.index(" "+packageLookUp(arr[0]).addr+"\n("+packageLookUp(arr[0]).zipcode+")")
 
-print(getMinimumDistanceBetween2Cities(pkS1, pkE1) + 0)
+print(getMinimumDistanceBetween2Cities(pkS1, pkE1))
 
 pkS2 = city_arr2.index(" "+packageLookUp(arr[0]).addr+"\n("+packageLookUp(arr[0]).zipcode+")")
 pkE2 = city_arr2.index(" "+packageLookUp(arr[1]).addr+"\n("+packageLookUp(arr[1]).zipcode+")")
